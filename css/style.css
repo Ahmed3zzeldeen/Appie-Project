@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,37 +6,30 @@
 }
 
 :root {
-  --header-color:#eef0f6f7;
-  --color-main:#ff005f;
-  --text-color:#140234;
-  --color-8:#BCC6D1;
-  --color-2:#ECF1F2;
-  --color-4:#8C9EBE;
-  --color-5:#DDAF55;
-  --color-6:#D29A9B;
-  --color-7:#ECC5A4;
-  
-  --section-padding: 90px;
+  --main-color: #ff005f;
+  --main-bg-color: #eef0f6f7;
+  --text-color: #140234;
 }
 
 /* Start Global Components */
 body {
   background-color: #fff;
   font-family: sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-a:link ,a:visited  {
+a:link,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
 
 hr {
-  border-color: var(--header-color);
+  border-color: var(--main-bg-color);
   margin-bottom: 40px;
 }
 .container {
@@ -52,17 +45,16 @@ hr {
   align-items: center;
   margin-bottom: 80px;
 }
-.section-heading .main-heading{
+.section-heading .main-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: 1000;
 }
 
-.section-heading .description-heading{
+.section-heading .description-heading {
   font-size: 1.2rem;
   color: #777;
 }
-
 
 .section-heading.center-heading {
   display: flex;
@@ -70,10 +62,10 @@ hr {
   text-align: center;
   color: #140234;
 }
-.section-heading.center-heading .main-heading{
-font-size: 3rem;
+.section-heading.center-heading .main-heading {
+  font-size: 3rem;
 }
-.section-heading.center-heading .description-heading{
+.section-heading.center-heading .description-heading {
   font-size: 1.2rem;
 }
 
@@ -85,15 +77,15 @@ font-size: 3rem;
 }
 
 .outline-btn {
-  border: 2px solid var(--header-color);
+  border: 2px solid var(--main-bg-color);
   transition: 0.2s;
   color: var(--text-color);
   border-radius: 25px;
 }
 
 .outline-btn:hover {
-  border-color: var(--color-main);
-  box-shadow: 0px 0px 5px var(--color-main);
+  border-color: var(--main-color);
+  box-shadow: 0px 0px 5px var(--main-color);
 }
 
 .btn-white {
@@ -106,10 +98,9 @@ font-size: 3rem;
 }
 
 .btn-white:hover {
-  background-color: var(--color-main);
+  background-color: var(--main-color);
   color: #fff;
 }
-
 
 .arrows-btn {
   margin-top: 50px;
@@ -120,17 +111,17 @@ font-size: 3rem;
   margin-left: 10px;
 }
 
-.read-more-btn  {
+.read-more-btn {
   font-weight: 500;
 }
 
-.read-more-btn ,
-.read-more-btn .arrow-icon  {
+.read-more-btn,
+.read-more-btn .arrow-icon {
   color: #777;
   font-size: 0.86rem;
   transition: 0.5s;
 }
-.read-more-btn:hover ,
+.read-more-btn:hover,
 .read-more-btn:hover .arrow-icon {
   color: #ff005f;
 }
@@ -149,28 +140,28 @@ font-size: 3rem;
   font-size: 1rem;
 }
 
-.download-btns-box a::before  {
+.download-btns-box a::before {
   position: absolute;
   font: var(--fa-font-brands);
   left: 15px;
   top: 10px;
 }
 
-.download-btns-box a:nth-child(1)::before  {
-  content: '\f179';
+.download-btns-box a:nth-child(1)::before {
+  content: "\f179";
 }
-.download-btns-box a:nth-child(2)::before  {
-  content: '\f3ab';
-} 
+.download-btns-box a:nth-child(2)::before {
+  content: "\f3ab";
+}
 
 /* End Global Components */
 
 /* Start Main-Header */
 .main-header {
-  background-color: var(--header-color);
+  background-color: var(--main-bg-color);
   color: var(--text-color);
 }
-.main-header .container{
+.main-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +172,7 @@ font-size: 3rem;
 
 .main-header nav {
   display: flex;
-  color:inherit;
+  color: inherit;
   justify-content: space-between;
   align-items: center;
   width: 82%;
@@ -196,31 +187,26 @@ font-size: 3rem;
   color: var(--text-color);
 }
 .main-header .main-nav-list .main-nav-link a:hover {
-  color:var(--color-main);
+  color: var(--main-color);
 }
 
 .main-header .main-nav .main-nav-btn {
-  background-color: var(--color-main);
+  background-color: var(--main-color);
   color: white;
   font-weight: bolder;
 }
 
-
-/* 
-Burgar icon
-*/
-
-.checkbox , .hamburger-lines {
+.checkbox,
+.hamburger-lines {
   display: none;
 }
-
 
 /* End Main-Header */
 
 /* Hero Section */
 .hero-section {
   position: relative;
-  background-color: var(--header-color);
+  background-color: var(--main-bg-color);
   color: var(--text-color);
 }
 .hero-section .hero {
@@ -259,21 +245,20 @@ Burgar icon
   font-size: 1.05rem;
   border-radius: 50px;
   border-color: transparent;
-  box-shadow: -3px 0px 0px var(--color-main) ,
-              5px 10px 10px #a2a2a29b;
+  box-shadow: -3px 0px 0px var(--main-color), 5px 10px 10px #a2a2a29b;
 }
 
 .hero-email-input .msg-icon {
   position: absolute;
   z-index: 10;
-  color: var(--color-4);
+  color: #8c9ebe;
   line-height: 60px;
   padding-left: 20px;
 }
 
 .hero-email-input .arrow-icon {
   position: absolute;
-  color: var(--color-main);
+  color: var(--main-color);
   line-height: 60px;
   margin-left: -40px;
 }
@@ -285,7 +270,7 @@ Burgar icon
   justify-content: center;
 }
 .feedback-cont .feedback-imgs {
-  display: flex;  
+  display: flex;
   margin-left: 120px;
 }
 .feedback-cont .feedback-imgs img {
@@ -300,7 +285,7 @@ Burgar icon
   z-index: 999;
 }
 .feedback-text {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .feedback-text strong {
   display: block;
@@ -314,7 +299,6 @@ Burgar icon
   right: 0;
 }
 
-
 /* Services Section */
 .our-service-section {
   color: var(--text-color);
@@ -325,7 +309,7 @@ Burgar icon
   grid-gap: 30px;
 }
 .service-card {
-  border: 1px solid var(--header-color);
+  border: 1px solid var(--main-bg-color);
   border-radius: 15px;
   padding: 50px;
 }
@@ -349,17 +333,17 @@ Burgar icon
 .service-card .service-icon.fa-link {
   background-color: #503fff;
 }
-.service-card .service-icon.fa-bell  {
+.service-card .service-icon.fa-bell {
   background-color: #ff6f34;
 }
-.service-card .service-icon.fa-gear  {
+.service-card .service-icon.fa-gear {
   background-color: #7963fa;
 }
-.service-card .service-icon.fa-lock  {
+.service-card .service-icon.fa-lock {
   background-color: #47b675;
 }
 
-.service-card .service-title ,
+.service-card .service-title,
 .service-card .service-description {
   margin-bottom: 20px;
 }
@@ -374,13 +358,13 @@ Burgar icon
 .about-section .container {
   display: flex;
   padding: 0 40px 80px;
-  background-color: var(--header-color);
+  background-color: var(--main-bg-color);
   color: var(--text-color);
   margin-bottom: 80px;
 }
 
 .about-section picture {
-  width: 50%; 
+  width: 50%;
   overflow: hidden;
 }
 
@@ -392,19 +376,19 @@ Burgar icon
   width: 50%;
 }
 
-.about-section .about-text-box  .main-about-text {
+.about-section .about-text-box .main-about-text {
   font-weight: 1000;
   font-size: 45px;
 }
-.about-section .about-text-box .main-about-text span{
+.about-section .about-text-box .main-about-text span {
   display: inline-block;
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--color-main);
+  color: var(--main-color);
 }
 
-.about-section .about-text-box .description-about-text{
+.about-section .about-text-box .description-about-text {
   width: 90%;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -455,7 +439,7 @@ Burgar icon
 
 .moods-section .heading-text {
   width: 100%;
-  text-align: center;  
+  text-align: center;
   font-weight: 600;
 }
 .moods-section .heading-text h2 {
@@ -486,12 +470,10 @@ Burgar icon
   width: 80%;
 }
 
-
 .moods-section .feature-cont .feature-card h3 {
   position: relative;
   padding-left: 35px;
   font-size: 1.5rem;
-
 }
 
 .moods-section .feature-cont .feature-card h3::before {
@@ -504,17 +486,17 @@ Burgar icon
   top: 5px;
 }
 
-.moods-section .feature-cont .feature-card:nth-child(1)  h3::before {
+.moods-section .feature-cont .feature-card:nth-child(1) h3::before {
   background-color: rgba(255, 0, 95, 0.98);
   box-shadow: 0 0 0 6px rgba(66, 2, 62, 0.929);
 }
 
-.moods-section .feature-cont .feature-card:nth-child(2)  h3::before {
-  background-color: rgb(0, 195, 255 , 0.98);
+.moods-section .feature-cont .feature-card:nth-child(2) h3::before {
+  background-color: rgb(0, 195, 255, 0.98);
   box-shadow: 0 0 0 6px rgba(0, 66, 63, 0.929);
 }
 
-.moods-section .feature-cont .feature-card:nth-child(3)  h3::before {
+.moods-section .feature-cont .feature-card:nth-child(3) h3::before {
   background-color: rgb(48, 255, 48);
   box-shadow: 0 0 0 6px rgba(40, 66, 0, 0.929);
 }
@@ -522,9 +504,8 @@ Burgar icon
 .moods-section .feature-cont .feature-card p {
   margin-left: 35px;
   margin-top: 10px;
-  color: #BCC6D1;
+  color: #bcc6d1;
   font-weight: bold;
-  
 }
 .moods-section picture img {
   max-width: 100%;
@@ -533,7 +514,7 @@ Burgar icon
 /* End Feature Section */
 /* Start articles Section */
 
-.articles-section .stat-container{
+.articles-section .stat-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -545,7 +526,7 @@ Burgar icon
 
 .articles-section .stat-container .stat-card {
   padding: 40px;
-  box-shadow: 2px 20px 20px var(--header-color);
+  box-shadow: 2px 20px 20px var(--main-bg-color);
   border-radius: 10px;
 }
 .articles-section .stat-container .stat-card h3 {
@@ -579,7 +560,7 @@ Burgar icon
 }
 .articles-section .article-cont article .article-image::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -593,15 +574,15 @@ Burgar icon
   margin-left: 100px;
   gap: 20px;
 }
-.articles-section .article-cont article header h2{
+.articles-section .article-cont article header h2 {
   font-size: 1.8rem;
 }
-.articles-section .article-cont article header p{
+.articles-section .article-cont article header p {
   font-size: 1.05rem;
   color: #777;
 }
 
-.articles-section .article-cont aside { 
+.articles-section .article-cont aside {
   display: flex;
   width: 30%;
   flex-wrap: wrap;
@@ -614,7 +595,7 @@ Burgar icon
 /* End articles Section */
 /* Start Download Section */
 .download-section {
-  background-color: var(--header-color);
+  background-color: var(--main-bg-color);
   color: var(--text-color);
   line-height: 1.3;
 }
@@ -630,7 +611,7 @@ Burgar icon
 }
 .download-section .container .download-text-box h3 {
   font-size: 0.9rem;
-  color: var(--color-main);
+  color: var(--main-color);
 }
 .download-section .container .download-text-box h2 {
   font-size: 2.8rem;
@@ -662,7 +643,7 @@ Burgar icon
 .download-section .container .download-btns-box a strong {
   font-size: 1.2rem;
 }
-.download-section .container .download-btns-box a::before  {
+.download-section .container .download-btns-box a::before {
   font-size: 2.5rem;
   left: 10px;
   top: 10px;
@@ -683,7 +664,7 @@ Burgar icon
 }
 
 .plans-section .container .switch-btn .monthly-btn {
-  background-color: var(--color-main);
+  background-color: var(--main-color);
   color: #fff;
   font-weight: 600;
   border-radius: 25px;
@@ -702,11 +683,11 @@ Burgar icon
   width: 350px;
   padding: 40px;
   border-radius: 10px;
-  border: 2px solid var(--header-color);
+  border: 2px solid var(--main-bg-color);
   margin-bottom: 50px;
 }
 .plans-section .plans-container .plan-card.most-popular {
-  border-top: 3px solid var(--color-main);
+  border-top: 3px solid var(--main-color);
   box-shadow: 0px 10px 20px #a2a2a29b;
   position: relative;
 }
@@ -758,8 +739,8 @@ Burgar icon
 }
 .plans-section .plans-container .plan-card .plan-features .feature::before {
   position: absolute;
-  font-family: 'Font Awesome 6 Free';
-  content: '\f00c';
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
   background-color: #eef2fe;
   color: #3ea8b4;
   font-size: 1.2rem;
@@ -770,7 +751,7 @@ Burgar icon
 }
 
 .plans-section .plans-container .plan-card.most-popular a {
-  background-color: var(--color-main);
+  background-color: var(--main-color);
   color: #fff;
   border: none;
 }
@@ -839,7 +820,11 @@ Burgar icon
   font-weight: 600;
   color: #c6d1e2;
 }
-.testimonials-section .container .testimonials-text-cont .testimonials-info .arrows-btn {
+.testimonials-section
+  .container
+  .testimonials-text-cont
+  .testimonials-info
+  .arrows-btn {
   margin: 0;
 }
 
@@ -856,23 +841,23 @@ Burgar icon
   margin: auto;
 }
 .platforms-section .sponser-cont .sponser-card {
-  box-shadow: 0 10px 30px #BCC6D1;
+  box-shadow: 0 10px 30px #bcc6d1;
   width: 90px;
   height: 90px;
-  border-radius: 10px ;
+  border-radius: 10px;
   padding: 25px;
 }
 /* End platforms Section */
 
 /* Start footer Section */
 .footer-section {
-  background-color: var(--header-color);
+  background-color: var(--main-bg-color);
   color: var(--text-color);
 }
 
 .footer-section .container {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -887,7 +872,7 @@ Burgar icon
   width: 300px;
 }
 
-.footer-section .container .footer-top-cont .footer-logo .description { 
+.footer-section .container .footer-top-cont .footer-logo .description {
   margin: 25px 0;
   color: #3f3f3f;
   line-height: 1.5;
@@ -896,7 +881,12 @@ Burgar icon
 .footer-section .container .footer-top-cont .footer-logo .social-media-cont {
   margin: 30px 0 20px;
 }
-.footer-section .container .footer-top-cont .footer-logo .social-media-cont .btn-white {
+.footer-section
+  .container
+  .footer-top-cont
+  .footer-logo
+  .social-media-cont
+  .btn-white {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -908,7 +898,7 @@ Burgar icon
   margin-bottom: 20px;
 }
 
-.footer-section .container .footer-top-cont .footer-links-cont ,
+.footer-section .container .footer-top-cont .footer-links-cont,
 .footer-section .container .footer-top-cont .get-in-touch-cont {
   display: flex;
   flex-direction: column;
@@ -923,11 +913,16 @@ Burgar icon
   display: flex;
   color: #777;
 }
-.footer-section .container .footer-top-cont .footer-links-cont li a:hover ,
-.footer-section .container .footer-top-cont .get-in-touch-cont li a:hover  {
-  color: var(--color-main);
+.footer-section .container .footer-top-cont .footer-links-cont li a:hover,
+.footer-section .container .footer-top-cont .get-in-touch-cont li a:hover {
+  color: var(--main-color);
 }
-.footer-section .container .footer-top-cont .get-in-touch-cont li .get-touch-icon {
+.footer-section
+  .container
+  .footer-top-cont
+  .get-in-touch-cont
+  li
+  .get-touch-icon {
   color: #56befe;
   padding-right: 15px;
 }
@@ -941,7 +936,7 @@ Burgar icon
   border: 2px solid #e7e7e7;
 }
 .footer-section .container .copyright .download-btns-box a:nth-child(2):hover {
-  border: 2px solid var(--color-main);
+  border: 2px solid var(--main-color);
 }
 
 .footer-section .container .copyright-p {
@@ -956,7 +951,7 @@ Burgar icon
   bottom: 20px;
   border-radius: 10px;
   padding: 10px 12px;
-  background-color: var(--color-main);
+  background-color: var(--main-color);
   opacity: 0.6;
   transition: 0.2s;
 }
@@ -964,20 +959,23 @@ Burgar icon
   transform: translateY(-10px);
 }
 .back-to-top-btn .icon-arrow {
-  color: var(--header-color);
+  color: var(--main-bg-color);
 }
 /* End footer Section */
 
 /* Media Queries  */
 
 @media (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
   .container {
     max-width: 90%;
     padding: 80px 0;
   }
   .hero-section .container {
     padding-bottom: 150px;
-  } 
+  }
   .hero-text-box {
     width: 100%;
   }
@@ -1002,10 +1000,11 @@ Burgar icon
   }
   .moods-section .feature-cont {
     width: 90%;
+    margin-bottom: 30px;
   }
-
   .about-section .feature {
     width: 250px;
+    margin-bottom: 20px;
   }
 
   /* articles section  */
@@ -1032,19 +1031,19 @@ Burgar icon
     display: none;
   }
 
+  .plans-section .plans-container .plan-card .plan-features {
+    flex-direction: column;
+  }
 
   .testimonials-section .container .testimonials-text-cont {
     width: 90%;
   }
-  .testimonials-section .container .testimonials-text-cont .testimonials-info .arrows-btn {
+  .testimonials-section
+    .container
+    .testimonials-text-cont
+    .testimonials-info
+    .arrows-btn {
     display: none;
-  }
-
-}
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 10px;
   }
 }
 
@@ -1064,7 +1063,7 @@ Burgar icon
   }
 
   .main-nav-btn {
-    margin-right: 50px;
+    margin-right: 55px;
   }
   .checkbox {
     display: block;
@@ -1109,7 +1108,7 @@ Burgar icon
   .main-header nav {
     justify-content: flex-end;
   }
-  
+
   .main-header nav .main-nav-list {
     position: absolute;
     display: flex;
@@ -1118,7 +1117,7 @@ Burgar icon
     align-items: center;
     width: 100vw;
     height: calc(100vh - 100px);
-    background-color: var(--header-color);
+    background-color: var(--main-bg-color);
     box-shadow: inset 0 0 2000px rgb(255 255 255 / 50%);
     text-align: center;
     top: 100px;
@@ -1127,30 +1126,30 @@ Burgar icon
     transition: transform 0.5s ease-in-out;
     transform: translate(-100%);
   }
-  
+
   .main-header nav .main-nav-list li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
   }
 
-    input[type="checkbox"]:checked ~ .main-nav-list {
+  input[type="checkbox"]:checked ~ .main-nav-list {
     transform: translateX(0);
   }
-  
-    input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+
+  input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
-  
-    input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+
+  input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
-  
-    input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+
+  input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
 
-  .our-service-section .container header{
+  .our-service-section .container header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1178,7 +1177,7 @@ Burgar icon
     gap: 50px;
     text-align: center;
   }
-  .footer-section .container .footer-top-cont .footer-links-cont ,
+  .footer-section .container .footer-top-cont .footer-links-cont,
   .footer-section .container .footer-top-cont .get-in-touch-cont {
     display: flex;
     flex-direction: column;
@@ -1186,11 +1185,16 @@ Burgar icon
     gap: 10px;
   }
   .footer-section .container .copyright {
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-section .container .copyright .download-btns-box a {
+    margin-bottom: 15px;
   }
   .footer-section .container .copyright-p {
     margin-top: 20px;
   }
-
 }
